@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix NFToken Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="logo">NETFLIX</div>
+    <h1>NFToken Generator</h1>
+
+    <label for="cookieInput">Paste your Netflix cookie</label>
+    <textarea
+      id="cookieInput"
+      placeholder="NetflixId=xxx; SecureNetflixId=xxx; nfvdid=xxx&#10;&#10;— or Netscape / JSON format"
+    ></textarea>
+    <p class="hint">Accepted: raw cookie string &nbsp;|&nbsp; Netscape format &nbsp;|&nbsp; JSON</p>
+
+    <button id="generateBtn">
+      <span id="btnText">Generate NFToken</span>
+      <span class="spinner" id="spinner"></span>
+    </button>
+
+    <div id="result" class="hidden">
+      <div class="result-box" id="resultBox">
+        <div id="resultContent"></div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Educational use only. Use only cookies from accounts you are authorised to test.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
